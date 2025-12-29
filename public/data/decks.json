@@ -1,0 +1,255 @@
+{
+    "decks": {
+        "verde": {
+            "id": "verde",
+            "nameKey": "deck.verde.name",
+            "color": "#22c55e",
+            "minRoll": 8,
+            "maxRoll": 16,
+            "baseRounds": 2,
+            "totalCards": 64,
+            "cards": [
+                {
+                    "id": "verde_bicicleta",
+                    "nameKey": "card.verde_bicicleta.name",
+                    "descriptionKey": "card.verde_bicicleta.description",
+                    "type": "item",
+                    "quantity": 2,
+                    "consumable": true,
+                    "requiredTalents": ["inteligencia"]
+                },
+                {
+                    "id": "verde_taco_pregr",
+                    "nameKey": "card.verde_taco_pregr.name",
+                    "descriptionKey": "card.verde_taco_pregr.description",
+                    "type": "weapon",
+                    "quantity": 1,
+                    "consumable": false,
+                    "requiredTalents": ["inteligencia"],
+                    "damage": 8
+                },
+                {
+                    "id": "verde_barco",
+                    "nameKey": "card.verde_barco.name",
+                    "descriptionKey": "card.verde_barco.description",
+                    "type": "item",
+                    "quantity": 5,
+                    "consumable": false,
+                    "requiredTalents": ["dinheiro","inteligencia"]
+                },
+                {
+                    "id": "verde_computador",
+                    "nameKey": "card.verde_computador.name",
+                    "descriptionKey": "card.verde_computador.description",
+                    "type": "item",
+                    "quantity": 14,
+                    "consumable": true,
+                    "requiredTalents": ["tecnologia","dinheiro"]
+                },
+                {
+                    "id": "verde_internet",
+                    "nameKey": "card.verde_internet.name",
+                    "descriptionKey": "card.verde_internet.description",
+                    "type": "item",
+                    "quantity": 2,
+                    "consumable": true,
+                    "requiredTalents": ["tecnologia"]
+                },
+                {
+                    "id": "verde_walkie",
+                    "nameKey": "card.verde_walkie.name",
+                    "descriptionKey": "card.verde_walkie.description",
+                    "type": "item",
+                    "quantity": 6,
+                    "consumable": true,
+                    "requiredTalents": ["tecnologia"]
+                },
+                {
+                    "id": "verde_medkit",
+                    "nameKey": "card.verde_medkit.name",
+                    "descriptionKey": "card.verde_medkit.description",
+                    "type": "item",
+                    "quantity": 4,
+                    "consumable": true,
+                    "requiredTalents": ["inteligencia"]
+                },
+                {
+                    "id": "verde_raspadinha",
+                    "nameKey": "card.verde_raspadinha.name",
+                    "descriptionKey": "card.verde_raspadinha.description",
+                    "type": "item",
+                    "quantity": 10,
+                    "consumable": true,
+                    "requiredTalents": ["dinheiro"]
+                },
+                {
+                    "id": "verde_pilha",
+                    "nameKey": "card.verde_pilha.name",
+                    "descriptionKey": "card.verde_pilha.description",
+                    "type": "item",
+                    "quantity": 4,
+                    "consumable": true,
+                    "requiredTalents": ["dinheiro"]
+                },
+                {
+                    "id": "verde_lanca_fogo",
+                    "nameKey": "card.verde_lanca_fogo.name",
+                    "descriptionKey": "card.verde_lanca_fogo.description",
+                    "type": "weapon",
+                    "quantity": 2,
+                    "consumable": false,
+                    "requiredTalents": ["inteligencia"],
+                    "damage": 10
+                },
+                {
+                    "id": "verde_pisca_pisca",
+                    "nameKey": "card.verde_pisca_pisca.name",
+                    "descriptionKey": "card.verde_pisca_pisca.description",
+                    "type": "item",
+                    "quantity": 2,
+                    "consumable": true,
+                    "requiredTalents": ["tecnologia","dinheiro"]
+                },
+                {
+                    "id": "verde_walkman",
+                    "nameKey": "card.verde_walkman.name",
+                    "descriptionKey": "card.verde_walkman.description",
+                    "type": "item",
+                    "quantity": 4,
+                    "consumable": true,
+                    "requiredTalents": ["tecnologia"]
+                },
+                {
+                    "id": "verde_mapa",
+                    "nameKey": "card.verde_mapa.name",
+                    "descriptionKey": "card.verde_mapa.description",
+                    "type": "item",
+                    "quantity": 4,
+                    "consumable": true,
+                    "requiredTalents": ["geografia"]
+                },
+                {
+                    "id": "verde_fosforo",
+                    "nameKey": "card.verde_fosforo.name",
+                    "descriptionKey": "card.verde_fosforo.description",
+                    "type": "item",
+                    "quantity": 4,
+                    "consumable": true,
+                    "requiredTalents": ["dinheiro"]
+                }
+            ]
+        },
+
+        "amarelo": {
+            "id": "amarelo",
+            "nameKey": "deck.amarelo.name",
+            "color": "#f59e0b",
+            "minRoll": 17,
+            "maxRoll": 17,
+            "baseRounds": 2,
+            "totalCards": 10,
+            "cards": [
+                {
+                    "id": "amarelo_1",
+                    "nameKey": "card.amarelo_1.name",
+                    "descriptionKey": "card.amarelo_1.description",
+                    "type": "item",
+                    "quantity": 5,
+                    "requiredTalents": ["brutal_strength", "rage"]
+                },
+                {
+                    "id": "amarelo_2",
+                    "nameKey": "card.amarelo_2.name",
+                    "descriptionKey": "card.amarelo_2.description",
+                    "type": "item",
+                    "quantity": 5,
+                    "requiredTalents": ["armor", "shield_block"]
+                }
+            ]
+        },
+
+        "laranja": {
+            "id": "laranja",
+            "nameKey": "deck.laranja.name",
+            "color": "#f97316",
+            "minRoll": 18,
+            "maxRoll": 18,
+            "baseRounds": 3,
+            "totalCards": 8,
+            "cards": [
+                {
+                    "id": "laranja_1",
+                    "nameKey": "card.laranja_1.name",
+                    "descriptionKey": "card.laranja_1.description",
+                    "type": "item",
+                    "quantity": 4,
+                    "requiredTalents": ["arcane_power", "mana_pool"]
+                },
+                {
+                    "id": "laranja_2",
+                    "nameKey": "card.laranja_2.name",
+                    "descriptionKey": "card.laranja_2.description",
+                    "type": "item",
+                    "quantity": 4,
+                    "requiredTalents": ["healing_power", "purification"]
+                }
+            ]
+        },
+
+        "russo": {
+            "id": "russo",
+            "nameKey": "deck.russo.name",
+            "color": "#dc2626",
+            "minRoll": 19,
+            "maxRoll": 19,
+            "baseRounds": 4,
+            "totalCards": 5,
+            "cards": [
+                {
+                    "id": "russo_1",
+                    "nameKey": "card.russo_1.name",
+                    "descriptionKey": "card.russo_1.description",
+                    "type": "special",
+                    "quantity": 2,
+                    "requiredTalents": ["critical_strike", "brutal_strength"]
+                },
+                {
+                    "id": "russo_2",
+                    "nameKey": "card.russo_2.name",
+                    "descriptionKey": "card.russo_2.description",
+                    "type": "special",
+                    "quantity": 3,
+                    "requiredTalents": ["armor", "arcane_power"]
+                }
+            ]
+        },
+
+        "personagens": {
+            "id": "personagens",
+            "nameKey": "deck.personagens.name",
+            "color": "#8b5cf6",
+            "minRoll": 20,
+            "maxRoll": 20,
+            "baseRounds": 0,
+            "totalCards": 3,
+            "cards": [
+                {
+                    "id": "personagem_1",
+                    "nameKey": "card.personagem_1.name",
+                    "descriptionKey": "card.personagem_1.description",
+                    "type": "character",
+                    "quantity": 1,
+                    "requiredTalents": null
+                },
+                {
+                    "id": "personagem_2",
+                    "nameKey": "card.personagem_2.name",
+                    "descriptionKey": "card.personagem_2.description",
+                    "type": "character",
+                    "quantity": 2,
+                    "requiredTalents": null
+                }
+            ]
+        }
+    }
+}

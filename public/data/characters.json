@@ -1,0 +1,345 @@
+{
+    "characters": [
+        {
+            "id": "hunter",
+            "nameKey": "character.hunter.name",
+            "descriptionKey": "character.hunter.description",
+            "icon": "🏹",
+            "color": "0xff4444",
+            "talents": [
+                {
+                    "id": "max_health",
+                    "nameKey": "talent.max_health.name",
+                    "descriptionKey": "talent.max_health.description",
+                    "levels": [10, 12, 14, 16, 18]
+                },
+                {
+                    "id": "movement",
+                    "nameKey": "talent.movement.name",
+                    "descriptionKey": "talent.movement.description",
+                    "levels": [3, 4, 4, 5, 5]
+                },
+                {
+                    "id": "tracking",
+                    "nameKey": "talent.tracking.name",
+                    "descriptionKey": "talent.tracking.description",
+                    "levels": [1, 2, 3, 4, 5]
+                },
+                {
+                    "id": "precision",
+                    "nameKey": "talent.precision.name",
+                    "descriptionKey": "talent.precision.description",
+                    "levels": [1, 2, 2, 3, 4]
+                }
+            ],
+            "abilities": [
+                {
+                    "id": "hunter_mark",
+                    "nameKey": "ability.hunter_mark.name",
+                    "descriptionKey": "ability.hunter_mark.description",
+                    "type": "active"
+                },
+                {
+                    "id": "eagle_eye",
+                    "nameKey": "ability.eagle_eye.name",
+                    "descriptionKey": "ability.eagle_eye.description",
+                    "type": "passive"
+                }
+            ]
+        },
+        {
+            "id": "mystic",
+            "nameKey": "character.mystic.name",
+            "descriptionKey": "character.mystic.description",
+            "icon": "🔮",
+            "color": "0x9944ff",
+            "talents": [
+                {
+                    "id": "max_health",
+                    "nameKey": "talent.max_health.name",
+                    "descriptionKey": "talent.max_health.description",
+                    "levels": [8, 9, 10, 12, 14]
+                },
+                {
+                    "id": "movement",
+                    "nameKey": "talent.movement.name",
+                    "descriptionKey": "talent.movement.description",
+                    "levels": [2, 2, 3, 3, 4]
+                },
+                {
+                    "id": "arcane_power",
+                    "nameKey": "talent.arcane_power.name",
+                    "descriptionKey": "talent.arcane_power.description",
+                    "levels": [1, 2, 3, 4, 5]
+                },
+                {
+                    "id": "mana_pool",
+                    "nameKey": "talent.mana_pool.name",
+                    "descriptionKey": "talent.mana_pool.description",
+                    "levels": [3, 4, 5, 6, 8]
+                }
+            ],
+            "abilities": [
+                {
+                    "id": "mystic_barrier",
+                    "nameKey": "ability.mystic_barrier.name",
+                    "descriptionKey": "ability.mystic_barrier.description",
+                    "type": "active"
+                },
+                {
+                    "id": "arcane_sight",
+                    "nameKey": "ability.arcane_sight.name",
+                    "descriptionKey": "ability.arcane_sight.description",
+                    "type": "passive"
+                }
+            ]
+        },
+        {
+            "id": "guardian",
+            "nameKey": "character.guardian.name",
+            "descriptionKey": "character.guardian.description",
+            "icon": "🛡️",
+            "color": "0x4488ff",
+            "talents": [
+                {
+                    "id": "max_health",
+                    "nameKey": "talent.max_health.name",
+                    "descriptionKey": "talent.max_health.description",
+                    "levels": [14, 16, 18, 20, 24]
+                },
+                {
+                    "id": "movement",
+                    "nameKey": "talent.movement.name",
+                    "descriptionKey": "talent.movement.description",
+                    "levels": [2, 2, 3, 3, 3]
+                },
+                {
+                    "id": "armor",
+                    "nameKey": "talent.armor.name",
+                    "descriptionKey": "talent.armor.description",
+                    "levels": [2, 3, 4, 5, 6]
+                },
+                {
+                    "id": "shield_block",
+                    "nameKey": "talent.shield_block.name",
+                    "descriptionKey": "talent.shield_block.description",
+                    "levels": [1, 2, 2, 3, 4]
+                }
+            ],
+            "abilities": [
+                {
+                    "id": "protective_aura",
+                    "nameKey": "ability.protective_aura.name",
+                    "descriptionKey": "ability.protective_aura.description",
+                    "type": "active"
+                },
+                {
+                    "id": "iron_will",
+                    "nameKey": "ability.iron_will.name",
+                    "descriptionKey": "ability.iron_will.description",
+                    "type": "passive"
+                }
+            ]
+        },
+        {
+            "id": "shadow",
+            "nameKey": "character.shadow.name",
+            "descriptionKey": "character.shadow.description",
+            "icon": "🗡️",
+            "color": "0x333333",
+            "talents": [
+                {
+                    "id": "max_health",
+                    "nameKey": "talent.max_health.name",
+                    "descriptionKey": "talent.max_health.description",
+                    "levels": [8, 9, 10, 11, 12]
+                },
+                {
+                    "id": "movement",
+                    "nameKey": "talent.movement.name",
+                    "descriptionKey": "talent.movement.description",
+                    "levels": [4, 5, 5, 6, 7]
+                },
+                {
+                    "id": "stealth",
+                    "nameKey": "talent.stealth.name",
+                    "descriptionKey": "talent.stealth.description",
+                    "levels": [1, 2, 3, 4, 5]
+                },
+                {
+                    "id": "critical_strike",
+                    "nameKey": "talent.critical_strike.name",
+                    "descriptionKey": "talent.critical_strike.description",
+                    "levels": [2, 3, 4, 5, 6]
+                }
+            ],
+            "abilities": [
+                {
+                    "id": "vanish",
+                    "nameKey": "ability.vanish.name",
+                    "descriptionKey": "ability.vanish.description",
+                    "type": "active"
+                },
+                {
+                    "id": "backstab",
+                    "nameKey": "ability.backstab.name",
+                    "descriptionKey": "ability.backstab.description",
+                    "type": "passive"
+                }
+            ]
+        },
+        {
+            "id": "healer",
+            "nameKey": "character.healer.name",
+            "descriptionKey": "character.healer.description",
+            "icon": "✨",
+            "color": "0x44ff88",
+            "talents": [
+                {
+                    "id": "max_health",
+                    "nameKey": "talent.max_health.name",
+                    "descriptionKey": "talent.max_health.description",
+                    "levels": [9, 10, 12, 14, 16]
+                },
+                {
+                    "id": "movement",
+                    "nameKey": "talent.movement.name",
+                    "descriptionKey": "talent.movement.description",
+                    "levels": [2, 3, 3, 4, 4]
+                },
+                {
+                    "id": "healing_power",
+                    "nameKey": "talent.healing_power.name",
+                    "descriptionKey": "talent.healing_power.description",
+                    "levels": [2, 3, 4, 5, 6]
+                },
+                {
+                    "id": "purification",
+                    "nameKey": "talent.purification.name",
+                    "descriptionKey": "talent.purification.description",
+                    "levels": [1, 1, 2, 2, 3]
+                }
+            ],
+            "abilities": [
+                {
+                    "id": "divine_light",
+                    "nameKey": "ability.divine_light.name",
+                    "descriptionKey": "ability.divine_light.description",
+                    "type": "active"
+                },
+                {
+                    "id": "healing_touch",
+                    "nameKey": "ability.healing_touch.name",
+                    "descriptionKey": "ability.healing_touch.description",
+                    "type": "passive"
+                }
+            ]
+        },
+        {
+            "id": "berserker",
+            "nameKey": "character.berserker.name",
+            "descriptionKey": "character.berserker.description",
+            "icon": "⚔️",
+            "color": "0xff8844",
+            "talents": [
+                {
+                    "id": "max_health",
+                    "nameKey": "talent.max_health.name",
+                    "descriptionKey": "talent.max_health.description",
+                    "levels": [12, 14, 16, 18, 20]
+                },
+                {
+                    "id": "movement",
+                    "nameKey": "talent.movement.name",
+                    "descriptionKey": "talent.movement.description",
+                    "levels": [3, 3, 4, 4, 5]
+                },
+                {
+                    "id": "rage",
+                    "nameKey": "talent.rage.name",
+                    "descriptionKey": "talent.rage.description",
+                    "levels": [1, 2, 3, 4, 5]
+                },
+                {
+                    "id": "brutal_strength",
+                    "nameKey": "talent.brutal_strength.name",
+                    "descriptionKey": "talent.brutal_strength.description",
+                    "levels": [2, 3, 4, 5, 7]
+                }
+            ],
+            "abilities": [
+                {
+                    "id": "bloodlust",
+                    "nameKey": "ability.bloodlust.name",
+                    "descriptionKey": "ability.bloodlust.description",
+                    "type": "active"
+                },
+                {
+                    "id": "berserker_rage",
+                    "nameKey": "ability.berserker_rage.name",
+                    "descriptionKey": "ability.berserker_rage.description",
+                    "type": "passive"
+                }
+            ]
+        },
+        {
+            "id": "arthur",
+            "nameKey": "character.arthur.name",
+            "descriptionKey": "character.arthur.description",
+            "icon": "🎩",
+            "color": "0x8b4513",
+            "talents": [
+                {
+                    "id": "max_health",
+                    "nameKey": "talent.max_health.name",
+                    "descriptionKey": "talent.max_health.description",
+                    "levels": [15, 17, 17, 17, 17, 20]
+                },
+                {
+                    "id": "movement",
+                    "nameKey": "talent.movement.name",
+                    "descriptionKey": "talent.movement.description",
+                    "levels": [3, 4, 4, 5, 5, 6]
+                },
+                {
+                    "id": "tecnologia",
+                    "nameKey": "talent.tecnologia.name",
+                    "descriptionKey": "talent.tecnologia.description",
+                    "levels": [6, 5, 5, 3, 3, 1]
+                },
+                {
+                    "id": "geografia",
+                    "nameKey": "talent.geografia.name",
+                    "descriptionKey": "talent.geografia.description",
+                    "levels": [3, 3, 2, 2, 1, 0]
+                },
+                {
+                    "id": "inteligencia",
+                    "nameKey": "talent.inteligencia.name",
+                    "descriptionKey": "talent.inteligencia.description",
+                    "levels": [5, 4, 2, 1, 0]
+                },
+                {
+                    "id": "percepcao",
+                    "nameKey": "talent.percepcao.name",
+                    "descriptionKey": "talent.percepcao.description",
+                    "levels": [5, 2, 2, 2, 0]
+                }
+            ],
+            "abilities": [
+                {
+                    "id": "quick_thinking",
+                    "nameKey": "ability.quick_thinking.name",
+                    "descriptionKey": "ability.quick_thinking.description",
+                    "type": "active"
+                },
+                {
+                    "id": "resourceful",
+                    "nameKey": "ability.resourceful.name",
+                    "descriptionKey": "ability.resourceful.description",
+                    "type": "passive"
+                }
+            ]
+        }
+    ]
+}

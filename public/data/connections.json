@@ -1,0 +1,508 @@
+{
+    "path001": [
+        "path002",
+        "path027",
+        "path050",
+        "path094",
+        "path099"
+    ],
+    "path002": [
+        "path001",
+        "path003",
+        "LauraHouse"
+    ],
+    "path003": [
+        "path002",
+        "path004"
+    ],
+    "path004": [
+        "path003",
+        "path005",
+        "path021"
+    ],
+    "path005": [
+        "path004",
+        "path006"
+    ],
+    "path006": [
+        "path005",
+        "path007"
+    ],
+    "path007": [
+        "path006",
+        "path008"
+    ],
+    "path008": [
+        "path007",
+        "path009",
+        "DanoneHouse"
+    ],
+    "path009": [
+        "path008",
+        "path010"
+    ],
+    "path010": [
+        "path009",
+        "path011"
+    ],
+    "path011": [
+        "path010",
+        "path012"
+    ],
+    "path012": [
+        "path011",
+        "path013"
+    ],
+    "path013": [
+        "path012",
+        "path014",
+        "path022",
+        "LucasHouse"
+    ],
+    "path014": [
+        "path013",
+        "path015"
+    ],
+    "path015": [
+        "path014",
+        "path016"
+    ],
+    "path016": [
+        "path015",
+        "path017"
+    ],
+    "path017": [
+        "path016",
+        "path018"
+    ],
+    "path018": [
+        "path017",
+        "path019"
+    ],
+    "path019": [
+        "path018",
+        "path020"
+    ],
+    "path020": [
+        "path019",
+        "path023",
+        "Lake"
+    ],
+    "path021": [
+        "path004",
+        "path024"
+    ],
+    "path022": [
+        "path013",
+        "path025"
+    ],
+    "path023": [
+        "path020",
+        "path026"
+    ],
+    "path024": [
+        "path021",
+        "path030"
+    ],
+    "path025": [
+        "path022",
+        "path040",
+        "path041"
+    ],
+    "path026": [
+        "path023",
+        "path045"
+    ],
+    "path027": [
+        "path028",
+        "path001",
+        "path050",
+        "path094",
+        "path099"
+    ],
+    "path028": [
+        "path027",
+        "path029",
+        "PetShop"
+    ],
+    "path029": [
+        "path028",
+        "path030"
+    ],
+    "path030": [
+        "path024",
+        "path029",
+        "path031",
+        "path046"
+    ],
+    "path031": [
+        "path030",
+        "path032"
+    ],
+    "path032": [
+        "path031",
+        "path033"
+    ],
+    "path033": [
+        "path032",
+        "path034"
+    ],
+    "path034": [
+        "path033",
+        "path035"
+    ],
+    "path035": [
+        "path034",
+        "path036",
+        "Shopping"
+    ],
+    "path036": [
+        "path035",
+        "path037"
+    ],
+    "path037": [
+        "path036",
+        "path038"
+    ],
+    "path038": [
+        "path037",
+        "path039"
+    ],
+    "path039": [
+        "path038",
+        "path040"
+    ],
+    "path040": [
+        "path025",
+        "path039",
+        "path041"
+    ],
+    "path041": [
+        "path025",
+        "path040",
+        "path042",
+        "path047"
+    ],
+    "path042": [
+        "path041",
+        "path043"
+    ],
+    "path043": [
+        "path042",
+        "path044",
+        "ArthurHouse"
+    ],
+    "path044": [
+        "path043",
+        "path045"
+    ],
+    "path045": [
+        "path026",
+        "path044"
+    ],
+    "path046": [
+        "path030",
+        "path048"
+    ],
+    "path047": [
+        "path041",
+        "path049"
+    ],
+    "path048": [
+        "path046",
+        "path053"
+    ],
+    "path049": [
+        "path047",
+        "path065",
+        "path066"
+    ],
+    "path050": [
+        "path051",
+        "path001",
+        "path027",
+        "path094",
+        "path099"
+    ],
+    "path051": [
+        "path050",
+        "path052",
+        "School"
+    ],
+    "path052": [
+        "path051",
+        "path053"
+    ],
+    "path053": [
+        "path048",
+        "path052",
+        "path054",
+        "path070"
+    ],
+    "path054": [
+        "path053",
+        "path055"
+    ],
+    "path055": [
+        "path054",
+        "path056",
+        "Library"
+    ],
+    "path056": [
+        "path055",
+        "path057"
+    ],
+    "path057": [
+        "path056",
+        "path058"
+    ],
+    "path058": [
+        "path057",
+        "path059"
+    ],
+    "path059": [
+        "path058",
+        "path060",
+        "Establishment"
+    ],
+    "path060": [
+        "path059",
+        "path061"
+    ],
+    "path061": [
+        "path060",
+        "path062"
+    ],
+    "path062": [
+        "path061",
+        "path063",
+        "CityHall"
+    ],
+    "path063": [
+        "path062",
+        "path064"
+    ],
+    "path064": [
+        "path063",
+        "path065"
+    ],
+    "path065": [
+        "path049",
+        "path064",
+        "path066"
+    ],
+    "path066": [
+        "path049",
+        "path065",
+        "path067",
+        "path071"
+    ],
+    "path067": [
+        "path066",
+        "path068"
+    ],
+    "path068": [
+        "path067",
+        "path069"
+    ],
+    "path069": [
+        "path068",
+        "Hospital"
+    ],
+    "path070": [
+        "path053",
+        "path072"
+    ],
+    "path071": [
+        "path066",
+        "path073"
+    ],
+    "path072": [
+        "path070",
+        "path074"
+    ],
+    "path073": [
+        "path071",
+        "path088"
+    ],
+    "path074": [
+        "path072",
+        "path075",
+        "path095"
+    ],
+    "path075": [
+        "path074",
+        "path076"
+    ],
+    "path076": [
+        "path075",
+        "path077",
+        "PoliceStation"
+    ],
+    "path077": [
+        "path076",
+        "path078"
+    ],
+    "path078": [
+        "path077",
+        "path079",
+        "Mountain"
+    ],
+    "path079": [
+        "path078",
+        "path080"
+    ],
+    "path080": [
+        "path079",
+        "path081",
+        "Station"
+    ],
+    "path081": [
+        "path080",
+        "path082"
+    ],
+    "path082": [
+        "path081",
+        "path083"
+    ],
+    "path083": [
+        "path082",
+        "path084"
+    ],
+    "path084": [
+        "path083",
+        "path085",
+        "ThriftStore"
+    ],
+    "path085": [
+        "path084",
+        "path086"
+    ],
+    "path086": [
+        "path085",
+        "path087"
+    ],
+    "path087": [
+        "path086",
+        "path088",
+        "FatherHouse"
+    ],
+    "path088": [
+        "path073",
+        "path087",
+        "path089"
+    ],
+    "path089": [
+        "path088",
+        "path090",
+        "path096"
+    ],
+    "path090": [
+        "path089",
+        "path091"
+    ],
+    "path091": [
+        "path090",
+        "path092"
+    ],
+    "path092": [
+        "path091",
+        "path093"
+    ],
+    "path093": [
+        "path092",
+        "path094",
+        "HauntedHouse"
+    ],
+    "path094": [
+        "path093",
+        "path001",
+        "path027",
+        "path050",
+        "path099"
+    ],
+    "path095": [
+        "path074",
+        "path097"
+    ],
+    "path096": [
+        "path089",
+        "path098"
+    ],
+    "path097": [
+        "path095",
+        "path099",
+        "JacksonHouse"
+    ],
+    "path098": [
+        "path096",
+        "Laboratory"
+    ],
+    "path099": [
+        "path001",
+        "path027",
+        "path050",
+        "path094",
+        "path097"
+    ],
+    "LauraHouse": [
+        "path002"
+    ],
+    "DanoneHouse": [
+        "path008"
+    ],
+    "LucasHouse": [
+        "path013"
+    ],
+    "Lake": [
+        "path020"
+    ],
+    "PetShop": [
+        "path028"
+    ],
+    "Shopping": [
+        "path035"
+    ],
+    "ArthurHouse": [
+        "path043"
+    ],
+    "School": [
+        "path051"
+    ],
+    "Library": [
+        "path055"
+    ],
+    "Establishment": [
+        "path059"
+    ],
+    "CityHall": [
+        "path062"
+    ],
+    "Hospital": [
+        "path069"
+    ],
+    "PoliceStation": [
+        "path076"
+    ],
+    "Mountain": [
+        "path078"
+    ],
+    "Station": [
+        "path080"
+    ],
+    "ThriftStore": [
+        "path084"
+    ],
+    "FatherHouse": [
+        "path087"
+    ],
+    "HauntedHouse": [
+        "path093"
+    ],
+    "JacksonHouse": [
+        "path097"
+    ],
+    "Laboratory": [
+        "path098"
+    ]
+}

@@ -1,0 +1,151 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="13300" height="9000" viewBox="0 0 13300 9000" fill="none">
+<path id="LauraHouse" fill="#696767" stroke="#0007a7" stroke-linecap="round" stroke-linejoin="round" stroke-width="75" paint-order="stroke" d="m 350, 300 h 1000 v 1000 h -1000 z"/>
+<path id="DanoneHouse" fill="#696767" stroke="#0007a7" stroke-linecap="round" stroke-linejoin="round" stroke-width="75" paint-order="stroke" d="m 3650, 300 h 1000 v 1000 h -1000 z"/>
+<path id="LucasHouse" fill="#696767" stroke="#0007a7" stroke-linecap="round" stroke-linejoin="round" stroke-width="75" paint-order="stroke" d="m 6400, 300 h 1000 v 1000 h -1000 z"/>
+<path id="Lake" fill="#696767" stroke="#0007a7" stroke-linecap="round" stroke-linejoin="round" stroke-width="75" paint-order="stroke" d="m 11050, 550 h 2000 v 2000 h -2000 z"/>
+<path id="PetShop" fill="#696767" stroke="#0007a7" stroke-linecap="round" stroke-linejoin="round" stroke-width="75" paint-order="stroke" d="m 350, 2050 h 1000 v 1000 h -1000 z"/>
+<path id="Shopping" fill="#696767" stroke="#0007a7" stroke-linecap="round" stroke-linejoin="round" stroke-width="75" paint-order="stroke" d="m 3950, 2050 h 1500 v 1000 h -1500 z"/>
+<path id="ArthurHouse" fill="#696767" stroke="#0007a7" stroke-linecap="round" stroke-linejoin="round" stroke-width="75" paint-order="stroke" d="m 8600, 2050 h 1000 v 1000 h -1000 z"/>
+<path id="School" fill="#696767" stroke="#0007a7" stroke-linecap="round" stroke-linejoin="round" stroke-width="75" paint-order="stroke" d="m 350, 3800 h 1000 v 1000 h -1000 z"/>
+<path id="Library" fill="#696767" stroke="#0007a7" stroke-linecap="round" stroke-linejoin="round" stroke-width="75" paint-order="stroke" d="m 2550, 3800 h 1000 v 1000 h -1000 z"/>
+<path id="Establishment" fill="#696767" stroke="#0007a7" stroke-linecap="round" stroke-linejoin="round" stroke-width="75" paint-order="stroke" d="m 4750, 3800 h 1000 v 1000 h -1000 z"/>
+<path id="CityHall" fill="#696767" stroke="#0007a7" stroke-linecap="round" stroke-linejoin="round" stroke-width="75" paint-order="stroke" d="m 6400, 3800 h 1000 v 1000 h -1000 z"/>
+<path id="Hospital" fill="#696767" stroke="#0007a7" stroke-linecap="round" stroke-linejoin="round" stroke-width="75" paint-order="stroke" d="m 10250, 3800 h 1000 v 1000 h -1000 z"/>
+<path id="PoliceStation" fill="#696767" stroke="#0007a7" stroke-linecap="round" stroke-linejoin="round" stroke-width="75" paint-order="stroke" d="m 2550, 5550 h 1000 v 1000 h -1000 z"/>
+<path id="Station" fill="#696767" stroke="#0007a7" stroke-linecap="round" stroke-linejoin="round" stroke-width="75" paint-order="stroke" d="m 4750, 5550 h 1000 v 1000 h -1000 z"/>
+<path id="ThriftStore" fill="#696767" stroke="#0007a7" stroke-linecap="round" stroke-linejoin="round" stroke-width="75" paint-order="stroke" d="m 6950, 5550 h 1000 v 1000 h -1000 z"/>
+<path id="HauntedHouse" fill="#696767" stroke="#0007a7" stroke-linecap="round" stroke-linejoin="round" stroke-width="75" paint-order="stroke" d="m 11900, 5550 h 1000 v 1000 h -1000 z"/>
+<path id="JacksonHouse" fill="#696767" stroke="#0007a7" stroke-linecap="round" stroke-linejoin="round" stroke-width="75" paint-order="stroke" d="m 700, 7400 h 1000 v 1000 h -1000 z"/>
+<path id="Mountain" fill="#696767" stroke="#0007a7" stroke-linecap="round" stroke-linejoin="round" stroke-width="75" paint-order="stroke" d="m 3650, 7050 h 1000 v 1000 h -1000 z"/>
+<path id="FatherHouse" fill="#696767" stroke="#0007a7" stroke-linecap="round" stroke-linejoin="round" stroke-width="75" paint-order="stroke" d="m 8600, 7050 h 1000 v 1000 h -1000 z"/>
+<path id="Laboratory" fill="#696767" stroke="#0007a7" stroke-linecap="round" stroke-linejoin="round" stroke-width="75" paint-order="stroke" d="m 11250, 7400 h 1000 v 1000 h -1000 z"/>
+<path id="path001" fill="#696767" stroke="#0007a7" stroke-linecap="round" stroke-linejoin="round" stroke-width="75" paint-order="stroke" d="m 50, 1400 h 500 v 300 h -500 z"/> 
+<path id="path002" fill="#696767" stroke="#0007a7" stroke-linecap="round" stroke-linejoin="round" stroke-width="75" paint-order="stroke" d="m 600, 1400 q 100,0 100,-50 h 300 q 0,50 100,50 v 300 h -500 z"/> 
+<path id="path003" fill="#696767" stroke="#0007a7" stroke-linecap="round" stroke-linejoin="round" stroke-width="75" paint-order="stroke" d="m 1150, 1400 h 500 v 300 h -500 z"/>  
+<path id="path004" fill="#696767" stroke="#0007a7" stroke-linecap="round" stroke-linejoin="round" stroke-width="75" paint-order="stroke" d="m 1700, 1400 h 500 v 300 q -100,0 -100,50 h -300 q 0,-50 -100,-50 z"/>  
+<path id="path005" fill="#696767" stroke="#0007a7" stroke-linecap="round" stroke-linejoin="round" stroke-width="75" paint-order="stroke" d="m 2250, 1400 h 500 v 300 h -500 z"/>  
+<path id="path006" fill="#696767" stroke="#0007a7" stroke-linecap="round" stroke-linejoin="round" stroke-width="75" paint-order="stroke" d="m 2800, 1400 h 500 v 300 h -500 z"/>  
+<path id="path007" fill="#696767" stroke="#0007a7" stroke-linecap="round" stroke-linejoin="round" stroke-width="75" paint-order="stroke" d="m 3350, 1400 h 500 v 300 h -500 z"/>  
+<path id="path008" fill="#696767" stroke="#0007a7" stroke-linecap="round" stroke-linejoin="round" stroke-width="75" paint-order="stroke" d="m 3900, 1400 q 100,0 100,-50 h 300 q 0,50 100,50 v 300 h -500 z"/> 
+<path id="path009" fill="#696767" stroke="#0007a7" stroke-linecap="round" stroke-linejoin="round" stroke-width="75" paint-order="stroke" d="m 4450, 1400 h 500 v 300 h -500 z"/>  
+<path id="path010" fill="#696767" stroke="#0007a7" stroke-linecap="round" stroke-linejoin="round" stroke-width="75" paint-order="stroke" d="m 5000, 1400 h 500 v 300 h -500 z"/>  
+<path id="path011" fill="#696767" stroke="#0007a7" stroke-linecap="round" stroke-linejoin="round" stroke-width="75" paint-order="stroke" d="m 5550, 1400 h 500 v 300 h -500 z"/>  
+<path id="path012" fill="#696767" stroke="#0007a7" stroke-linecap="round" stroke-linejoin="round" stroke-width="75" paint-order="stroke" d="m 6100, 1400 h 500 v 300 h -500 z"/>  
+<path id="path013" fill="#696767" stroke="#0007a7" stroke-linecap="round" stroke-linejoin="round" stroke-width="75" paint-order="stroke" d="m 6650, 1400 h 500 v 300 q -100,0 -100,50 h -300 q 0,-50 -100,-50 z"/>  
+<path id="path014" fill="#696767" stroke="#0007a7" stroke-linecap="round" stroke-linejoin="round" stroke-width="75" paint-order="stroke" d="m 7200, 1400 h 500 v 300 h -500 z"/>  
+<path id="path015" fill="#696767" stroke="#0007a7" stroke-linecap="round" stroke-linejoin="round" stroke-width="75" paint-order="stroke" d="m 7750, 1400 h 500 v 300 h -500 z"/>  
+<path id="path016" fill="#696767" stroke="#0007a7" stroke-linecap="round" stroke-linejoin="round" stroke-width="75" paint-order="stroke" d="m 8300, 1400 h 500 v 300 h -500 z"/>  
+<path id="path017" fill="#696767" stroke="#0007a7" stroke-linecap="round" stroke-linejoin="round" stroke-width="75" paint-order="stroke" d="m 8850, 1400 h 500 v 300 h -500 z"/>  
+<path id="path018" fill="#696767" stroke="#0007a7" stroke-linecap="round" stroke-linejoin="round" stroke-width="75" paint-order="stroke" d="m 9400, 1400 h 500 v 300 h -500 z"/>  
+<path id="path019" fill="#696767" stroke="#0007a7" stroke-linecap="round" stroke-linejoin="round" stroke-width="75" paint-order="stroke" d="m 9950, 1400 h 500 v 300 h -500 z"/>  
+<path id="path020" fill="#696767" stroke="#0007a7" stroke-linecap="round" stroke-linejoin="round" stroke-width="75" paint-order="stroke" d="m 10500, 1400 h 500 v 300 q -100,0 -100,50 h -300 q 0,-50 -100,-50 z"/>  
+<path id="path021" fill="#696767" stroke="#0007a7" stroke-linecap="round" stroke-linejoin="round" stroke-width="75" paint-order="stroke" d="m 1800, 1800 h 300 v 600 h -300 z"/>  
+<path id="path022" fill="#696767" stroke="#0007a7" stroke-linecap="round" stroke-linejoin="round" stroke-width="75" paint-order="stroke" d="m 6750, 1800 h 300 l 400, 600 h -300 z "/>  
+<path id="path023" fill="#696767" stroke="#0007a7" stroke-linecap="round" stroke-linejoin="round" stroke-width="75" paint-order="stroke" d="m 10600, 1800 h 300 l -262.5, 600 h -300 z "/>  
+<path id="path024" fill="#696767" stroke="#0007a7" stroke-linecap="round" stroke-linejoin="round" stroke-width="75" paint-order="stroke" d="m 1800, 2450 h 300 v 600 h -300 z"/>  
+<path id="path025" fill="#696767" stroke="#0007a7" stroke-linecap="round" stroke-linejoin="round" stroke-width="75" paint-order="stroke" d="m 7175, 2450 h 300 l 400, 600 h -300 z "/>  
+<path id="path026" fill="#696767" stroke="#0007a7" stroke-linecap="round" stroke-linejoin="round" stroke-width="75" paint-order="stroke" d="m 10312.5, 2450 h 300 l -262.5, 600 h -300 z "/>  
+<path id="path027" fill="#696767" stroke="#0007a7" stroke-linecap="round" stroke-linejoin="round" stroke-width="75" paint-order="stroke" d="m 50, 3150 h 500 v 300 h -500 z"/>  
+<path id="path028" fill="#696767" stroke="#0007a7" stroke-linecap="round" stroke-linejoin="round" stroke-width="75" paint-order="stroke" d="m 600, 3150 q 100,0 100,-50 h 300 q 0,50 100,50 v 300 h -500 z"/> 
+<path id="path029" fill="#696767" stroke="#0007a7" stroke-linecap="round" stroke-linejoin="round" stroke-width="75" paint-order="stroke" d="m 1150, 3150 h 500 v 300 h -500 z"/>  
+<path id="path030" fill="#696767" stroke="#0007a7" stroke-linecap="round" stroke-linejoin="round" stroke-width="75" paint-order="stroke" d="m 1700, 3150 q 100,0 100,-50 h 300 q 0,50 100,50 v 300 q -100,0 -100,50 h -300 q 0,-50 -100,-50 z"/>  
+<path id="path031" fill="#696767" stroke="#0007a7" stroke-linecap="round" stroke-linejoin="round" stroke-width="75" paint-order="stroke" d="m 2250, 3150 h 500 v 300 h -500 z"/>  
+<path id="path032" fill="#696767" stroke="#0007a7" stroke-linecap="round" stroke-linejoin="round" stroke-width="75" paint-order="stroke" d="m 2800, 3150 h 500 v 300 h -500 z"/>  
+<path id="path033" fill="#696767" stroke="#0007a7" stroke-linecap="round" stroke-linejoin="round" stroke-width="75" paint-order="stroke" d="m 3350, 3150 h 500 v 300 h -500 z"/>  
+<path id="path034" fill="#696767" stroke="#0007a7" stroke-linecap="round" stroke-linejoin="round" stroke-width="75" paint-order="stroke" d="m 3900, 3150 h 500 v 300 h -500 z"/>  
+<path id="path035" fill="#696767" stroke="#0007a7" stroke-linecap="round" stroke-linejoin="round" stroke-width="75" paint-order="stroke" d="m 4450, 3150 q 100,0 100,-50 h 300 q 0,50 100,50 v 300 h -500 z"/> 
+<path id="path036" fill="#696767" stroke="#0007a7" stroke-linecap="round" stroke-linejoin="round" stroke-width="75" paint-order="stroke" d="m 5000, 3150 h 500 v 300 h -500 z"/>  
+<path id="path037" fill="#696767" stroke="#0007a7" stroke-linecap="round" stroke-linejoin="round" stroke-width="75" paint-order="stroke" d="m 5550, 3150 h 500 v 300 h -500 z"/>  
+<path id="path038" fill="#696767" stroke="#0007a7" stroke-linecap="round" stroke-linejoin="round" stroke-width="75" paint-order="stroke" d="m 6100, 3150 h 500 v 300 h -500 z"/>  
+<path id="path039" fill="#696767" stroke="#0007a7" stroke-linecap="round" stroke-linejoin="round" stroke-width="75" paint-order="stroke" d="m 6650, 3150 h 500 v 300 h -500 z"/>  
+<path id="path040" fill="#696767" stroke="#0007a7" stroke-linecap="round" stroke-linejoin="round" stroke-width="75" paint-order="stroke" d="m 7200, 3150 h 275 q 100,0 100,-50 h 125 v 350 h-500 z"/>  
+<path id="path041" fill="#696767" stroke="#0007a7" stroke-linecap="round" stroke-linejoin="round" stroke-width="75" paint-order="stroke" d="m 7750, 3150 v -50 h 125 q 0,50 100,50 h 275 v 300 q -100,0 -100,50 h -300 q 0,-50 -100,-50 z"/>  
+<path id="path042" fill="#696767" stroke="#0007a7" stroke-linecap="round" stroke-linejoin="round" stroke-width="75" paint-order="stroke" d="m 8300, 3150 h 500 v 300 h -500 z"/>  
+<path id="path043" fill="#696767" stroke="#0007a7" stroke-linecap="round" stroke-linejoin="round" stroke-width="75" paint-order="stroke" d="m 8850, 3150 q 100,0 100,-50 h 300 q 0,50 100,50 v 300 h -500 z"/>  
+<path id="path044" fill="#696767" stroke="#0007a7" stroke-linecap="round" stroke-linejoin="round" stroke-width="75" paint-order="stroke" d="m 9400, 3150 h 500 v 300 h -500 z"/>  
+<path id="path045" fill="#696767" stroke="#0007a7" stroke-linecap="round" stroke-linejoin="round" stroke-width="75" paint-order="stroke" d="m 9950, 3150 q 100,0 100,-50 h 300 q 0,50 100,50 v 300 h -500 z"/>  
+<path id="path046" fill="#696767" stroke="#0007a7" stroke-linecap="round" stroke-linejoin="round" stroke-width="75" paint-order="stroke" d="m 1800, 3550 h 300 v 600 h -300 z"/>  
+<path id="path047" fill="#696767" stroke="#0007a7" stroke-linecap="round" stroke-linejoin="round" stroke-width="75" paint-order="stroke" d="m 7850, 3550 h 300 l 400, 600 h -300 z "/>  
+<path id="path048" fill="#696767" stroke="#0007a7" stroke-linecap="round" stroke-linejoin="round" stroke-width="75" paint-order="stroke" d="m 1800, 4200 h 300 v 600 h -300 z"/>  
+<path id="path049" fill="#696767" stroke="#0007a7" stroke-linecap="round" stroke-linejoin="round" stroke-width="75" paint-order="stroke" d="m 8275, 4200 h 300 l 400, 600 h -300 z "/>  
+<path id="path050" fill="#696767" stroke="#0007a7" stroke-linecap="round" stroke-linejoin="round" stroke-width="75" paint-order="stroke" d="m 50, 4900 h 500 v 300 h -500 z"/>  
+<path id="path051" fill="#696767" stroke="#0007a7" stroke-linecap="round" stroke-linejoin="round" stroke-width="75" paint-order="stroke" d="m 600, 4900 q 100,0 100,-50 h 300 q 0,50 100,50 v 300 h -500 z"/>  
+<path id="path052" fill="#696767" stroke="#0007a7" stroke-linecap="round" stroke-linejoin="round" stroke-width="75" paint-order="stroke" d="m 1150, 4900 h 500 v 300 h -500 z"/>  
+<path id="path053" fill="#696767" stroke="#0007a7" stroke-linecap="round" stroke-linejoin="round" stroke-width="75" paint-order="stroke" d="m 1700, 4900 q 100,0 100,-50 h 300 q 0,50 100,50 v 300 q -100,0 -100,50 h -300 q 0,-50 -100,-50 z"/>  
+<path id="path054" fill="#696767" stroke="#0007a7" stroke-linecap="round" stroke-linejoin="round" stroke-width="75" paint-order="stroke" d="m 2250, 4900 h 500 v 300 h -500 z"/>  
+<path id="path055" fill="#696767" stroke="#0007a7" stroke-linecap="round" stroke-linejoin="round" stroke-width="75" paint-order="stroke" d="m 2800, 4900 q 100,0 100,-50 h 300 q 0,50 100,50 v 300 h -500 z"/>  
+<path id="path056" fill="#696767" stroke="#0007a7" stroke-linecap="round" stroke-linejoin="round" stroke-width="75" paint-order="stroke" d="m 3350, 4900 h 500 v 300 h -500 z"/>  
+<path id="path057" fill="#696767" stroke="#0007a7" stroke-linecap="round" stroke-linejoin="round" stroke-width="75" paint-order="stroke" d="m 3900, 4900 h 500 v 300 h -500 z"/>  
+<path id="path058" fill="#696767" stroke="#0007a7" stroke-linecap="round" stroke-linejoin="round" stroke-width="75" paint-order="stroke" d="m 4450, 4900 h 500 v 300 h -500 z"/>  
+<path id="path059" fill="#696767" stroke="#0007a7" stroke-linecap="round" stroke-linejoin="round" stroke-width="75" paint-order="stroke" d="m 5000, 4900 q 100,0 100,-50 h 300 q 0,50 100,50 v 300 h -500 z"/>  
+<path id="path060" fill="#696767" stroke="#0007a7" stroke-linecap="round" stroke-linejoin="round" stroke-width="75" paint-order="stroke" d="m 5550, 4900 h 500 v 300 h -500 z"/>  
+<path id="path061" fill="#696767" stroke="#0007a7" stroke-linecap="round" stroke-linejoin="round" stroke-width="75" paint-order="stroke" d="m 6100, 4900 h 500 v 300 h -500 z"/>  
+<path id="path062" fill="#696767" stroke="#0007a7" stroke-linecap="round" stroke-linejoin="round" stroke-width="75" paint-order="stroke" d="m 6650, 4900 q 100,0 100,-50 h 300 q 0,50 100,50 v 300 h -500 z"/>  
+<path id="path063" fill="#696767" stroke="#0007a7" stroke-linecap="round" stroke-linejoin="round" stroke-width="75" paint-order="stroke" d="m 7200, 4900 h 500 v 300 h -500 z"/>  
+<path id="path064" fill="#696767" stroke="#0007a7" stroke-linecap="round" stroke-linejoin="round" stroke-width="75" paint-order="stroke" d="m 7750, 4900 h 500 v 300 h -500 z"/>  
+<path id="path065" fill="#696767" stroke="#0007a7" stroke-linecap="round" stroke-linejoin="round" stroke-width="75" paint-order="stroke" d="m 8300, 4900 h 275 q 100,0 100,-50 h 125 v 350 h-500 z"/>  
+<path id="path066" fill="#696767" stroke="#0007a7" stroke-linecap="round" stroke-linejoin="round" stroke-width="75" paint-order="stroke" d="m 8850, 4900 v -50 h 125 q 0,50 100,50 h 275 v 300 q -100,0 -100,50 h -300 q 0,-50 -100,-50 z"/>  
+<path id="path067" fill="#696767" stroke="#0007a7" stroke-linecap="round" stroke-linejoin="round" stroke-width="75" paint-order="stroke" d="m 9400, 4900 h 500 v 300 h -500 z"/>  
+<path id="path068" fill="#696767" stroke="#0007a7" stroke-linecap="round" stroke-linejoin="round" stroke-width="75" paint-order="stroke" d="m 9950, 4900 h 500 v 300 h -500 z"/>  
+<path id="path069" fill="#696767" stroke="#0007a7" stroke-linecap="round" stroke-linejoin="round" stroke-width="75" paint-order="stroke" d="m 10500, 4900 q 100,0 100,-50 h 300 q 0,50 100,50 v 300 h -500 z"/>  
+<path id="path070" fill="#696767" stroke="#0007a7" stroke-linecap="round" stroke-linejoin="round" stroke-width="75" paint-order="stroke" d="m 1800, 5300 h 300 v 600 h -300 z"/>  
+<path id="path071" fill="#696767" stroke="#0007a7" stroke-linecap="round" stroke-linejoin="round" stroke-width="75" paint-order="stroke" d="m 8950, 5300 h 300 l 400, 600 h -300 z "/>  
+<path id="path072" fill="#696767" stroke="#0007a7" stroke-linecap="round" stroke-linejoin="round" stroke-width="75" paint-order="stroke" d="m 1800, 5950 h 300 v 600 h -300 z"/>  
+<path id="path073" fill="#696767" stroke="#0007a7" stroke-linecap="round" stroke-linejoin="round" stroke-width="75" paint-order="stroke" d="m 9375, 5950 h 300 l 400, 600 h -300 z "/>  
+<path id="path074" fill="#696767" stroke="#0007a7" stroke-linecap="round" stroke-linejoin="round" stroke-width="75" paint-order="stroke" d="m 1800, 6650 v-50 h 300 q 0,50 100,50 v 300 q -100,0 -100,50 h -300 z"/>  
+<path id="path075" fill="#696767" stroke="#0007a7" stroke-linecap="round" stroke-linejoin="round" stroke-width="75" paint-order="stroke" d="m 2250, 6650 h 500 v 300 h -500 z"/>  
+<path id="path076" fill="#696767" stroke="#0007a7" stroke-linecap="round" stroke-linejoin="round" stroke-width="75" paint-order="stroke" d="m 2800, 6650 q 100,0 100,-50 h 300 q 0,50 100,50 v 300 h -500 z"/>  
+<path id="path077" fill="#696767" stroke="#0007a7" stroke-linecap="round" stroke-linejoin="round" stroke-width="75" paint-order="stroke" d="m 3350, 6650 h 500 v 300 h -500 z"/>  
+<path id="path078" fill="#696767" stroke="#0007a7" stroke-linecap="round" stroke-linejoin="round" stroke-width="75" paint-order="stroke" d="m 3900, 6650 h 500 v 300 q -100,0 -100,50 h -300 q 0,-50 -100,-50 z"/>  
+<path id="path079" fill="#696767" stroke="#0007a7" stroke-linecap="round" stroke-linejoin="round" stroke-width="75" paint-order="stroke" d="m 4450, 6650 h 500 v 300 h -500 z"/>  
+<path id="path080" fill="#696767" stroke="#0007a7" stroke-linecap="round" stroke-linejoin="round" stroke-width="75" paint-order="stroke" d="m 5000, 6650 q 100,0 100,-50 h 300 q 0,50 100,50 v 300 h -500 z"/>  
+<path id="path081" fill="#696767" stroke="#0007a7" stroke-linecap="round" stroke-linejoin="round" stroke-width="75" paint-order="stroke" d="m 5550, 6650 h 500 v 300 h -500 z"/>  
+<path id="path082" fill="#696767" stroke="#0007a7" stroke-linecap="round" stroke-linejoin="round" stroke-width="75" paint-order="stroke" d="m 6100, 6650 h 500 v 300 h -500 z"/>  
+<path id="path083" fill="#696767" stroke="#0007a7" stroke-linecap="round" stroke-linejoin="round" stroke-width="75" paint-order="stroke" d="m 6650, 6650 h 500 v 300 h -500 z"/>  
+<path id="path084" fill="#696767" stroke="#0007a7" stroke-linecap="round" stroke-linejoin="round" stroke-width="75" paint-order="stroke" d="m 7200, 6650 q 100,0 100,-50 h 300 q 0,50 100,50 v 300 h -500 z"/>  
+<path id="path085" fill="#696767" stroke="#0007a7" stroke-linecap="round" stroke-linejoin="round" stroke-width="75" paint-order="stroke" d="m 7750, 6650 h 500 v 300 h -500 z"/>  
+<path id="path086" fill="#696767" stroke="#0007a7" stroke-linecap="round" stroke-linejoin="round" stroke-width="75" paint-order="stroke" d="m 8300, 6650 h 500 v 300 h -500 z"/>  
+<path id="path087" fill="#696767" stroke="#0007a7" stroke-linecap="round" stroke-linejoin="round" stroke-width="75" paint-order="stroke" d="m 8850, 6650 h 500 v 300 q -100,0 -100,50 h -300 q 0,-50 -100,-50 z"/>  
+<path id="path088" fill="#696767" stroke="#0007a7" stroke-linecap="round" stroke-linejoin="round" stroke-width="75" paint-order="stroke" d="m 9400, 6650 h 275 q 100,0 100,-50 h 125 v 350 h-500 z"/>  
+<path id="path089" fill="#696767" stroke="#0007a7" stroke-linecap="round" stroke-linejoin="round" stroke-width="75" paint-order="stroke" d="m 9950, 6650 v -50 h 125 q 0,50 100,50 h 275 v 300 q -100,0 -100,50 h -300 q 0,-50 -100,-50 z"/>  
+<path id="path090" fill="#696767" stroke="#0007a7" stroke-linecap="round" stroke-linejoin="round" stroke-width="75" paint-order="stroke" d="m 10500, 6650 h 500 v 300 h -500 z"/>  
+<path id="path091" fill="#696767" stroke="#0007a7" stroke-linecap="round" stroke-linejoin="round" stroke-width="75" paint-order="stroke" d="m 11050, 6650 h 500 v 300 h -500 z"/> 
+<path id="path092" fill="#696767" stroke="#0007a7" stroke-linecap="round" stroke-linejoin="round" stroke-width="75" paint-order="stroke" d="m 11600, 6650 h 500 v 300 h -500 z"/> 
+<path id="path093" fill="#696767" stroke="#0007a7" stroke-linecap="round" stroke-linejoin="round" stroke-width="75" paint-order="stroke" d="m 12150, 6650 q 100,0 100,-50 h 300 q 0,50 100,50 v 300 h -500 z"/> 
+<path id="path094" fill="#696767" stroke="#0007a7" stroke-linecap="round" stroke-linejoin="round" stroke-width="75" paint-order="stroke" d="m 12700, 6650 h 500 v 300 h -500 z"/> 
+<path id="path095" fill="#696767" stroke="#0007a7" stroke-linecap="round" stroke-linejoin="round" stroke-width="75" paint-order="stroke" d="m 1800, 7050 h 300 v 600 h -300 z"/>  
+<path id="path096" fill="#696767" stroke="#0007a7" stroke-linecap="round" stroke-linejoin="round" stroke-width="75" paint-order="stroke" d="m 10050, 7050 h 300 l 400, 600 h -300 z "/>  
+<path id="path097" fill="#696767" stroke="#0007a7" stroke-linecap="round" stroke-linejoin="round" stroke-width="75" paint-order="stroke" d="m 1800, 7700 h 300 v 600 h -300 z"/>  
+<path id="path098" fill="#696767" stroke="#0007a7" stroke-linecap="round" stroke-linejoin="round" stroke-width="75" paint-order="stroke" d="m 10475, 7700 h 300 l 400, 600 h -300 z "/> 
+<path id="path099" fill="#696767" stroke="#0007a7" stroke-linecap="round" stroke-linejoin="round" stroke-width="75" paint-order="stroke" d="m 1800, 8350 h 300 v 600 h -300 z"/>  
+<path id="doubleArrow01" fill="red" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="50" paint-order="stroke" d=" 
+M 125,1550 l 100,100 v -50 h 150 v 50 l 100,-100 l -100,-100 v 50 h -150 v -50 z 
+M 125,3300 l 100,100 v -50 h 150 v 50 l 100,-100 l -100,-100 v 50 h -150 v -50 z 
+M 125,5050 l 100,100 v -50 h 150 v 50 l 100,-100 l -100,-100 v 50 h -150 v -50 z 
+M 12775,6800 l 100,100 v -50 h 150 v 50 l 100,-100 l -100,-100 v 50 h -150 v -50 z 
+M 1850,8575 l 100,-100 l 100,100 h -50 v 150 h 50 l -100,100 l -100,-100 h 50 v -150 h -50 z 
+"/> 
+<path id="arrowLocations" fill="#3944bc" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="50" paint-order="stroke" d=" 
+M 775,1550 l 75,-100 l 75,100 h -37.5 v 100 h -75 v-100 z 
+M 4075,1550 l 75,-100 l 75,100 h -37.5 v 100 h -75 v-100 z 
+M 6825,1550 l 75,-100 l 75,100 h -37.5 v 100 h -75 v-100 z 
+M 10650,1550 v -37.5 h 100 v -37.5 l 100,75 l -100,75 v -37.5 h -100 z 
+M 775,3300 l 75,-100 l 75,100 h -37.5 v 100 h -75 v-100 z 
+M 4625,3300 l 75,-100 l 75,100 h -37.5 v 100 h -75 v-100 z 
+M 9025,3300 l 75,-100 l 75,100 h -37.5 v 100 h -75 v-100 z 
+M 775,5050 l 75,-100 l 75,100 h -37.5 v 100 h -75 v-100 z 
+M 2975,5050 l 75,-100 l 75,100 h -37.5 v 100 h -75 v-100 z 
+M 5175,5050 l 75,-100 l 75,100 h -37.5 v 100 h -75 v-100 z 
+M 6825,5050 l 75,-100 l 75,100 h -37.5 v 100 h -75 v-100 z 
+M 6825,5050 l 75,-100 l 75,100 h -37.5 v 100 h -75 v-100 z 
+M 10675,5050 l 75,-100 l 75,100 h -37.5 v 100 h -75 v-100 z 
+M 2975,6800 l 75,-100 l 75,100 h -37.5 v 100 h -75 v-100 z 
+M 4075,6800 l 75,100 l 75,-100 h -37.5 v -100 h -75 v100 z 
+M 5175,6800 l 75,-100 l 75,100 h -37.5 v 100 h -75 v-100 z 
+M 7375,6800 l 75,-100 l 75,100 h -37.5 v 100 h -75 v-100 z 
+M 9025,6800 l 75,100 l 75,-100 h -37.5 v -100 h -75 v100 z 
+M 12325,6800 l 75,-100 l 75,100 h -37.5 v 100 h -75 v-100 z 
+M 1850,8000 l 100,-75 v 37.5 h 100 v 75 h -100 v37.5 z 
+M 10725,8000 v -37.5 h 100 v -37.5 l 100,75 l -100,75 v -37.5 h -100 z 
+"/> 
+</svg>

@@ -1,0 +1,356 @@
+{
+    "game": {
+        "title": "Mundo Sombrio",
+        "subtitle": "Mapa de Tabuleiro"
+    },
+    "ui": {
+        "players": "Jogadores",
+        "currentTurn": "Turno Atual",
+        "selectCharacter": "Escolher Personagem",
+        "addPlayer": "+ Adicionar Jogador",
+        "playerName": "Nome do jogador",
+        "resetGame": "↻ Reiniciar Jogo",
+        "confirmReset": "Tem certeza que deseja reiniciar o jogo?",
+        "movement": "Movimento",
+        "movesAvailable": "Você pode mover",
+        "clickToMove": "Clique em uma casa destacada para mover",
+        "cancelMove": "✕ Cancelar",
+        "confirmMove": "✓ Confirmar",
+        "endTurn": "Finalizar Turno",
+        "tile": "casas",
+        "health": "Vida",
+        "talents": "Talentos",
+        "abilities": "Habilidades",
+        "passive": "Passiva",
+        "active": "Ativa",
+        "level": "Nível",
+        "value": "Valor",
+        "characterInfo": "Informações do Personagem",
+        "stats": "Atributos",
+        "maxHealth": "Vida Máxima",
+        "movementRange": "Alcance de Movimento"
+    },
+    "errors": {
+        "noPlayers": "Adicione pelo menos um jogador!",
+        "maxPlayers": "Máximo de 6 jogadores!",
+        "noName": "Digite um nome para o jogador!",
+        "noCharacter": "Selecione um personagem!",
+        "characterInUse": "Este personagem já está em uso!",
+        "initError": "Erro ao inicializar o jogo. Recarregue a página.",
+        "reload": "Recarregar"
+    },
+    "character": {
+        "hunter": {
+            "name": "Caçador",
+            "description": "Especialista em rastreamento e ataques à distância. Conhece bem as terras sombrias e suas criaturas."
+        },
+        "mystic": {
+            "name": "Místico",
+            "description": "Mestre das artes arcanas, capaz de manipular as energias do mundo sombrio."
+        },
+        "guardian": {
+            "name": "Guardião",
+            "description": "Protetor incansável, com grande resistência e capacidade de defender seus aliados."
+        },
+        "shadow": {
+            "name": "Sombra",
+            "description": "Mestre da furtividade, move-se rapidamente e ataca de surpresa."
+        },
+        "healer": {
+            "name": "Curandeiro",
+            "description": "Conhecedor das artes de cura, capaz de restaurar a vida de seus companheiros."
+        },
+        "berserker": {
+            "name": "Berserker",
+            "description": "Guerreiro feroz que canaliza sua fúria em combate devastador."
+        },
+        "arthur": {
+            "name": "Arthur",
+            "description": "Aventureiro versátil e inteligente, com habilidades em tecnologia e geografia."
+        }
+    },
+    "talent": {
+        "max_health": {
+            "name": "Vida Máxima",
+            "description": "Quantidade máxima de pontos de vida do personagem."
+        },
+        "movement": {
+            "name": "Movimento",
+            "description": "Quantidade de casas que o personagem pode se mover por turno."
+        },
+        "tracking": {
+            "name": "Rastreamento",
+            "description": "Capacidade de identificar rastros e detectar inimigos ocultos. Cada nível aumenta o alcance de detecção."
+        },
+        "precision": {
+            "name": "Precisão",
+            "description": "Melhora a chance de acerto em ataques à distância. Cada nível adiciona bônus ao dano."
+        },
+        "arcane_power": {
+            "name": "Poder Arcano",
+            "description": "Intensidade das magias ofensivas. Cada nível aumenta o dano mágico."
+        },
+        "mana_pool": {
+            "name": "Reserva de Mana",
+            "description": "Quantidade de energia mágica disponível para lançar feitiços."
+        },
+        "armor": {
+            "name": "Armadura",
+            "description": "Redução de dano físico recebido. Cada nível reduz mais dano."
+        },
+        "shield_block": {
+            "name": "Bloqueio com Escudo",
+            "description": "Chance de bloquear completamente um ataque. Cada nível aumenta a chance."
+        },
+        "stealth": {
+            "name": "Furtividade",
+            "description": "Capacidade de se mover sem ser detectado. Cada nível dificulta mais a detecção."
+        },
+        "critical_strike": {
+            "name": "Golpe Crítico",
+            "description": "Dano adicional em ataques surpresa. Cada nível aumenta o multiplicador de dano."
+        },
+        "healing_power": {
+            "name": "Poder de Cura",
+            "description": "Quantidade de vida restaurada por habilidades de cura. Cada nível aumenta a cura."
+        },
+        "purification": {
+            "name": "Purificação",
+            "description": "Quantidade de efeitos negativos que podem ser removidos por turno."
+        },
+        "tecnologia": {
+            "name": "Tecnologia",
+            "description": "Conhecimento em equipamentos tecnológicos. Reduz rodadas para montar itens tecnológicos."
+        },
+        "geografia": {
+            "name": "Geografia",
+            "description": "Conhecimento de terrenos e navegação. Reduz rodadas para montar itens de navegação."
+        },
+        "inteligencia": {
+            "name": "Inteligência",
+            "description": "Capacidade intelectual e raciocínio. Reduz rodadas para montar itens complexos."
+        },
+        "percepcao": {
+            "name": "Percepção",
+            "description": "Capacidade de observação e atenção aos detalhes. Aumenta eficiência em tarefas de observação."
+        },
+        "rage": {
+            "name": "Fúria",
+            "description": "Bônus de dano quando a vida está baixa. Cada nível aumenta o bônus."
+        },
+        "brutal_strength": {
+            "name": "Força Bruta",
+            "description": "Dano base em ataques corpo a corpo. Cada nível aumenta o dano."
+        }
+    },
+    "ability": {
+        "hunter_mark": {
+            "name": "Marca do Caçador",
+            "description": "Marca um inimigo. Todos os ataques contra ele causam dano extra por 2 turnos."
+        },
+        "eagle_eye": {
+            "name": "Olho de Águia",
+            "description": "Pode ver através de obstáculos e detectar inimigos em um raio maior."
+        },
+        "mystic_barrier": {
+            "name": "Barreira Mística",
+            "description": "Cria uma barreira protetora que absorve o próximo dano recebido."
+        },
+        "arcane_sight": {
+            "name": "Visão Arcana",
+            "description": "Pode detectar magia e itens mágicos em casas adjacentes."
+        },
+        "protective_aura": {
+            "name": "Aura Protetora",
+            "description": "Aliados adjacentes recebem metade do dano por 1 turno."
+        },
+        "iron_will": {
+            "name": "Vontade de Ferro",
+            "description": "Imune a efeitos de medo e controle mental."
+        },
+        "vanish": {
+            "name": "Desaparecer",
+            "description": "Torna-se invisível até o próximo ataque ou final do turno."
+        },
+        "backstab": {
+            "name": "Ataque pelas Costas",
+            "description": "Ataques contra inimigos que não o detectaram causam dano dobrado."
+        },
+        "divine_light": {
+            "name": "Luz Divina",
+            "description": "Cura todos os aliados em casas adjacentes em 3 pontos de vida."
+        },
+        "healing_touch": {
+            "name": "Toque Curativo",
+            "description": "Ao final de cada turno, recupera 1 ponto de vida de um aliado adjacente."
+        },
+        "bloodlust": {
+            "name": "Sede de Sangue",
+            "description": "Por 2 turnos, cada ataque que causar dano recupera 1 de vida."
+        },
+        "berserker_rage": {
+            "name": "Fúria do Berserker",
+            "description": "Quando a vida cai abaixo de 50%, ganha um ataque extra por turno."
+        },
+        "quick_thinking": {
+            "name": "Raciocínio Rápido",
+            "description": "Uma vez por turno, pode rolar novamente um teste de inteligência."
+        },
+        "resourceful": {
+            "name": "Engenhoso",
+            "description": "Itens montados duram uma rodada extra antes de quebrar."
+        }
+    },
+    "tracking": {
+        "title": "Rastrear",
+        "rollDice": "Rolar Dado",
+        "result": "Você rolou",
+        "selectDeck": "Escolha um Deck",
+        "drawCard": "Comprar Carta",
+        "availableDecks": "Decks Disponíveis",
+        "cannotTrack": "Você só pode Rastrear em um local (não em caminhos)",
+        "mustBeInLocation": "Você precisa estar em um local para Rastrear"
+    },
+    "deck": {
+        "verde": {
+            "name": "Deck Verde"
+        },
+        "amarelo": {
+            "name": "Deck Amarelo"
+        },
+        "laranja": {
+            "name": "Deck Laranja"
+        },
+        "russo": {
+            "name": "Item Russo"
+        },
+        "personagens": {
+            "name": "Deck de Personagens"
+        }
+    },
+    "card": {
+        "verde_1": {
+            "name": "Poção de Cura Menor",
+            "description": "Recupera 3 pontos de vida"
+        },
+        "verde_2": {
+            "name": "Ervas Medicinais",
+            "description": "Pode ser usada para curar 2 de vida ou remover veneno"
+        },
+        "verde_3": {
+            "name": "Mapa Rasgado",
+            "description": "Revela caminhos secretos próximos"
+        },
+        "amarelo_1": {
+            "name": "Amuleto de Proteção",
+            "description": "Reduz o próximo dano recebido pela metade"
+        },
+        "amarelo_2": {
+            "name": "Cristal de Energia",
+            "description": "Recupera um uso de habilidade especial"
+        },
+        "laranja_1": {
+            "name": "Arma Lendária",
+            "description": "+2 de dano permanente em ataques"
+        },
+        "laranja_2": {
+            "name": "Armadura Reforçada",
+            "description": "+3 de vida máxima permanente"
+        },
+        "russo_1": {
+            "name": "Vodka Mística",
+            "description": "Ganhe +3 em todos os atributos por 2 turnos"
+        },
+        "russo_2": {
+            "name": "Matryoshka Amaldiçoada",
+            "description": "Clone-se temporariamente, ganhando uma ação extra"
+        },
+        "personagem_1": {
+            "name": "Aliado Misterioso",
+            "description": "Um novo personagem se junta ao grupo permanentemente"
+        },
+        "personagem_2": {
+            "name": "Espírito Guardião",
+            "description": "Invoca um guardião que luta ao seu lado por 3 turnos"
+        }
+        ,
+        "verde_bicicleta": {
+            "name": "Bicicleta",
+            "description": "Gasta ao ser usada. Requer Inteligência para montar. Ao usar, jogador se movimenta +12 metros."
+        },
+        "verde_taco_pregr": {
+            "name": "Taco de Baseball com Pregos",
+            "description": "Arma (não gasta ao ser usada). Requer Inteligência para montar. Dano 8."
+        },
+        "verde_barco": {
+            "name": "Barco",
+            "description": "Não gasta. Requer Dinheiro/Inteligência para montar. Permite a todos os jogadores irem para o Lago."
+        },
+        "verde_computador": {
+            "name": "Computador",
+            "description": "Gasta ao ser usado. Requer Tecnologia/Dinheiro para montar. Desbloqueia um local já revelado."
+        },
+        "verde_internet": {
+            "name": "Internet",
+            "description": "Gasta ao ser usada. Requer Tecnologia. Revela todos os soldados russos e americanos ocultos no mundo real (mecânica a ser adicionada)."
+        },
+        "verde_walkie": {
+            "name": "Walkie Talkie",
+            "description": "Gasta ao ser usado. Requer Tecnologia. Teleporta para um local que contenha outro jogador com Walkie Talkie."
+        },
+        "verde_medkit": {
+            "name": "Med Kit",
+            "description": "Gasta ao ser usado. Requer Inteligência. Restaura toda a vida do personagem."
+        },
+        "verde_raspadinha": {
+            "name": "Raspadinha de Cereja",
+            "description": "Gasta ao ser usada. Requer Dinheiro. Restaura 3 de vida."
+        },
+        "verde_pilha": {
+            "name": "Pilha",
+            "description": "Gasta ao ser usada. Requer Dinheiro. Junto com a lanterna, é usada para sair do mundo invertido."
+        },
+        "verde_lanca_fogo": {
+            "name": "Lança com Ponta em Chamas",
+            "description": "Arma. Requer Inteligência para montar. Dano 10."
+        },
+        "verde_pisca_pisca": {
+            "name": "Pisca-pisca",
+            "description": "Gasta ao ser usada. Requer Tecnologia/Dinheiro. Faz com que inimigos revelem todas as cartas ocultas no seu local (apenas no mundo real)."
+        },
+        "verde_walkman": {
+            "name": "Walkman",
+            "description": "Gasta ao ser usado. Requer Tecnologia. Remove a possessão de um jogador."
+        },
+        "verde_mapa": {
+            "name": "Mapa",
+            "description": "Gasta ao ser usado. Requer Geografia. Mantém um túnel revelado para inimigos até que o mapa seja destruído ou descartado."
+        },
+        "verde_fosforo": {
+            "name": "Fósforo",
+            "description": "Gasta ao ser usado. Requer Dinheiro. Deve ser usado com gasolina para queimar túneis ou outros alvos."
+        }
+    },
+    "locations": {
+        "LauraHouse": "Casa da Laura",
+        "DanoneHouse": "Casa do Danone",
+        "LucasHouse": "Casa do Lucas",
+        "Lake": "Lago",
+        "PetShop": "Pet Shop",
+        "Shopping": "Shopping",
+        "ArthurHouse": "Casa do Arthur",
+        "School": "Escola",
+        "Library": "Biblioteca",
+        "Establishment": "Estabelecimento",
+        "CityHall": "Prefeitura",
+        "Hospital": "Hospital",
+        "PoliceStation": "Delegacia",
+        "Station": "Estação",
+        "ThriftStore": "Brechó",
+        "HauntedHouse": "Casa Assombrada",
+        "JacksonHouse": "Casa do Jackson",
+        "Mountain": "Montanha",
+        "FatherHouse": "Casa do Padre",
+        "Laboratory": "Laboratório"
+    }
+}

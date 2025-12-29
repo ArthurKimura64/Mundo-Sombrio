@@ -1,0 +1,427 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="description" content="Mundo Sombrio - Jogo de tabuleiro digital multiplayer de horror e mistério">
+    <meta name="theme-color" content="#1a1a2e">
+    <meta name="color-scheme" content="dark">
+    <meta name="keywords" content="RPG, tabuleiro, multiplayer, horror, mistério, Mundo Sombrio">
+    <title>Mundo Sombrio - Jogo de Tabuleiro Digital</title>
+    <script>
+    // Live reload client
+    (() => {
+        const ws = new WebSocket(`ws://${location.hostname}:${location.port || 3000}`);
+        ws.onmessage = (event) => {
+            try {
+                const msg = JSON.parse(event.data);
+                if (msg.type === 'reload') {
+                    location.reload();
+                }
+            } catch (e) {}
+        };
+    })();
+    </script>
+    
+    <!-- Preconnect para CDN -->
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+    <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+    <link rel="preconnect" href="https://esm.sh" crossorigin>
+    
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎮</text></svg>">
+    
+    <!-- CSS crítico inline para evitar FOUC -->
+    <style>
+        * { box-sizing: border-box; }
+        body { 
+            background: linear-gradient(135deg, #0d0d1a 0%, #1a1a2e 50%, #16213e 100%);
+            margin: 0; 
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            color: #e0e0e0;
+            min-height: 100vh;
+        }
+        .game-layout { display: grid; height: 100vh; }
+        .hidden { display: none !important; }
+        
+        /* Loading inicial */
+        .initial-loader {
+            position: fixed;
+            inset: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #0d0d1a 0%, #1a1a2e 50%, #16213e 100%);
+            z-index: 99999;
+            transition: opacity 0.5s ease;
+        }
+        .initial-loader.fade-out { opacity: 0; pointer-events: none; }
+        .loader-title {
+            font-size: 3rem;
+            color: #e94560;
+            margin-bottom: 20px;
+            text-shadow: 0 0 30px rgba(233, 69, 96, 0.6);
+            animation: pulse 2s infinite;
+        }
+        .loader-spinner {
+            width: 50px;
+            height: 50px;
+            border: 4px solid rgba(233, 69, 96, 0.2);
+            border-top-color: #e94560;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+        @keyframes spin { to { transform: rotate(360deg); } }
+        @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.7; } }
+    </style>
+    
+    <!-- CSS principal -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Scripts externos com defer -->
+    <script src="https://cdn.jsdelivr.net/npm/phaser@3.60.0/dist/phaser.min.js" defer></script>
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="initial-loader" id="initialLoader">
+        <div class="loader-title">🎮 Mundo Sombrio</div>
+        <div class="loader-spinner"></div>
+        <p style="margin-top: 20px; color: #888;">Carregando...</p>
+    </div>
+
+    <!-- ========== LOBBY / SISTEMA DE SALAS ========== -->
+    <div class="lobby-screen" id="lobbyScreen">
+        <div class="lobby-background">
+            <div class="fog-layer"></div>
+        </div>
+        
+        <div class="lobby-wrapper">
+            <!-- Header do Lobby -->
+            <header class="lobby-header">
+                <div class="logo-container">
+                    <span class="logo-icon">🌙</span>
+                    <h1 class="logo-text">Mundo Sombrio</h1>
+                </div>
+                <p class="tagline">Um jogo de mistério, horror e sobrevivência</p>
+            </header>
+
+            <!-- Conteúdo Principal do Lobby -->
+            <main class="lobby-main">
+                <!-- Painel Esquerdo: Criar/Entrar -->
+                <section class="lobby-panel create-panel">
+                    <div class="panel-card">
+                        <div class="panel-header">
+                            <span class="panel-icon">✨</span>
+                            <h2>Criar Partida</h2>
+                        </div>
+                        <div class="panel-body">
+                            <div class="form-group">
+                                <label for="createRoomName">Nome da Sala</label>
+                                <input type="text" id="createRoomName" placeholder="Ex: Noite de Horror" maxlength="25">
+                            </div>
+                            <div class="form-group">
+                                <label for="createPlayerName">Seu Nome</label>
+                                <input type="text" id="createPlayerName" placeholder="Como quer ser chamado?" maxlength="15">
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group half">
+                                    <label for="maxPlayers">Jogadores</label>
+                                    <select id="maxPlayers">
+                                        <option value="2">2 jogadores</option>
+                                        <option value="3">3 jogadores</option>
+                                        <option value="4">4 jogadores</option>
+                                        <option value="5">5 jogadores</option>
+                                        <option value="6" selected>6 jogadores</option>
+                                    </select>
+                                </div>
+                                <div class="form-group half">
+                                    <label class="checkbox-wrapper">
+                                        <input type="checkbox" id="isPrivateRoom">
+                                        <span class="checkmark"></span>
+                                        <span>Sala Privada</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <button class="btn btn-primary btn-glow" id="btnCreateRoom">
+                                <span class="btn-icon">🚀</span>
+                                <span>Criar Sala</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="divider">
+                        <span>ou</span>
+                    </div>
+
+                    <div class="panel-card compact">
+                        <div class="panel-header small">
+                            <span class="panel-icon">🔑</span>
+                            <h3>Entrar com Código</h3>
+                        </div>
+                        <div class="panel-body horizontal">
+                            <input type="text" id="roomCodeInput" placeholder="CÓDIGO" maxlength="6" class="code-input">
+                            <input type="text" id="joinPlayerName" placeholder="Seu nome" maxlength="15">
+                            <button class="btn btn-secondary" id="btnJoinByCode">
+                                Entrar
+                            </button>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Painel Direito: Lista de Salas -->
+                <section class="lobby-panel rooms-panel">
+                    <div class="panel-card full-height">
+                        <div class="panel-header">
+                            <span class="panel-icon">🏠</span>
+                            <h2>Salas Públicas</h2>
+                            <button class="btn-icon refresh-btn" id="btnRefreshRooms" title="Atualizar lista">
+                                <span class="refresh-icon">🔄</span>
+                            </button>
+                        </div>
+                        <div class="panel-body rooms-body">
+                            <div class="rooms-list" id="roomsList">
+                                <div class="rooms-loading">
+                                    <div class="mini-spinner"></div>
+                                    <span>Buscando salas...</span>
+                                </div>
+                            </div>
+                            
+                            <div class="no-rooms hidden" id="noRoomsMessage">
+                                <span class="empty-icon">🌑</span>
+                                <p>Nenhuma sala disponível</p>
+                                <small>Que tal criar uma?</small>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+
+            <!-- Rodapé do Lobby -->
+            <footer class="lobby-footer">
+                <button class="btn btn-ghost" id="btnOfflineMode">
+                    <span>🎮</span> Jogar Offline (Local)
+                </button>
+                <div class="connection-status" id="connectionStatus">
+                    <span class="status-dot offline"></span>
+                    <span class="status-text">Conectando...</span>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <!-- ========== SALA DE ESPERA (Waiting Room) ========== -->
+    <div class="waiting-room hidden" id="waitingRoom">
+        <div class="waiting-wrapper">
+            <header class="waiting-header">
+                <button class="btn btn-ghost back-btn" id="btnLeaveLobby">
+                    <span>←</span> Voltar ao Lobby
+                </button>
+                <div class="room-info">
+                    <h2 id="waitingRoomName">Nome da Sala</h2>
+                    <div class="room-code-display">
+                        <span>Código:</span>
+                        <code id="waitingRoomCode">XXXXXX</code>
+                        <button class="btn-icon copy-btn" id="btnCopyCode" title="Copiar código">📋</button>
+                    </div>
+                </div>
+            </header>
+
+            <main class="waiting-main">
+                <div class="players-grid" id="waitingPlayersList">
+                    <!-- Slots de jogadores -->
+                </div>
+                
+                <div class="waiting-chat">
+                    <div class="chat-messages" id="waitingChatMessages">
+                        <div class="chat-system">👋 Aguardando jogadores...</div>
+                    </div>
+                    <div class="chat-input-area">
+                        <input type="text" id="waitingChatInput" placeholder="Digite uma mensagem..." maxlength="200">
+                        <button class="btn btn-secondary" id="btnSendChat">Enviar</button>
+                    </div>
+                </div>
+            </main>
+
+            <footer class="waiting-footer">
+                <div class="host-controls" id="hostControls">
+                    <button class="btn btn-primary btn-large btn-glow" id="btnStartMatch" disabled>
+                        <span class="btn-icon">▶️</span>
+                        <span>Iniciar Partida</span>
+                    </button>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <!-- ========== TELA DO JOGO ========== -->
+    <div class="game-layout hidden" id="gameScreen">
+        <!-- BARRA SUPERIOR: Jogadores + Decks -->
+        <header class="top-bar" id="topBar">
+            <div class="players-bar" id="playersBar"></div>
+            <div class="decks-area" id="decksArea">
+                <h4>🃏 Decks</h4>
+                <div class="decks-icons" id="decksIcons"></div>
+            </div>
+        </header>
+        
+        <!-- Area de Setup (antes de iniciar) -->
+        <div class="setup-overlay" id="setupArea">
+            <div class="setup-content">
+                <h3>⚔️ Adicionar Personagens</h3>
+                <div class="add-player-form">
+                    <input type="text" id="playerName" placeholder="Nome do jogador" maxlength="12">
+                    <button id="openCharacterSelect" class="btn btn-secondary">Escolher Personagem</button>
+                    <button id="addPlayer" class="btn btn-primary" disabled>Adicionar</button>
+                </div>
+                <div class="setup-players-list" id="setupPlayersList">
+                    <div class="no-players-setup">Nenhum jogador adicionado ainda</div>
+                </div>
+                <div class="setup-buttons">
+                    <button id="btnStartGame" class="btn btn-start btn-large" disabled>
+                        ▶️ Iniciar Partida
+                    </button>
+                    <button id="btnClearSave" class="btn btn-secondary btn-small" title="Limpar jogo salvo">
+                        🗑️ Limpar Save
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- AREA PRINCIPAL DO JOGO -->
+        <main class="game-main">
+            <div class="game-area">
+                <div id="game-container"></div>
+            </div>
+            
+            <!-- PAINEL LATERAL DIREITO -->
+            <aside class="side-panel right-panel" id="rightPanel">
+                <button class="panel-toggle" id="toggleRightPanel">◀</button>
+                
+                <div class="panel-content">
+                    <div class="panel-tabs">
+                        <button class="tab-btn active" data-tab="log">📜 Log</button>
+                        <button class="tab-btn" data-tab="skills">⚔️ Skills</button>
+                    </div>
+                    
+                    <div class="tab-content active" id="tabLog">
+                        <div class="game-log" id="gameLog">
+                            <div class="log-entry system">🎮 Bem-vindo ao Mundo Sombrio!</div>
+                        </div>
+                    </div>
+                    
+                    <div class="tab-content" id="tabSkills">
+                        <div class="skills-panel">
+                            <div class="current-player-info" id="currentPlayerInfo">
+                                <span class="player-icon">👤</span>
+                                <span class="player-name">Selecione um jogador</span>
+                            </div>
+                            <div class="talents-section">
+                                <h4>📊 Talentos</h4>
+                                <div class="talents-list" id="talentsList">
+                                    <div class="no-talents">Adicione jogadores para ver talentos</div>
+                                </div>
+                            </div>
+                            <div class="abilities-section">
+                                <h4>⚡ Habilidades</h4>
+                                <div class="abilities-list" id="abilitiesList">
+                                    <div class="no-abilities">Adicione jogadores para ver habilidades</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </main>
+
+        <!-- BARRA INFERIOR: Cartas + Ações -->
+        <footer class="bottom-bar" id="bottomBar">
+            <section class="bottom-cards" aria-label="Cartas do jogador">
+                <div class="player-cards-area">
+                    <div class="cards-scroll" id="playerCardsScroll">
+                        <div class="no-cards">Nenhuma carta</div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="bottom-actions" aria-label="Ações">
+                <nav class="actions-bar" aria-label="Ações do jogador">
+                    <button class="action-btn" id="btnSkills" title="Usar Habilidades">⚡ <span>Habilidades</span></button>
+                    <button class="action-btn" id="btnTrack" title="Rastrear">🔍 <span>Rastrear</span></button>
+                    <button class="action-btn" id="btnTrade" title="Trocar">🔄 <span>Trocar</span></button>
+                    <button class="action-btn end-turn" id="btnEndTurn" title="Terminar Turno">⏭️ <span>Fim Turno</span></button>
+                </nav>
+            </section>
+        </footer>
+    </div>
+
+    <!-- ========== MODALS ========== -->
+    
+    <!-- Modal de Seleção de Personagem -->
+    <div class="modal-overlay hidden" id="characterSelectModal" role="dialog" aria-modal="true">
+        <div class="modal">
+            <div class="modal-header">
+                <h2>🧙 Escolher Personagem</h2>
+                <button class="modal-close" id="cancelCharacterSelect">✕</button>
+            </div>
+            <div class="modal-body">
+                <div class="modal-character-grid" id="characterGrid"></div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary" id="cancelCharacterSelectBtn">Cancelar</button>
+                <button class="btn btn-primary" id="confirmCharacterSelect" disabled>Selecionar</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Overlay de Rastrear -->
+    <div class="tracking-overlay hidden" id="trackingOverlay" aria-hidden="true">
+        <div class="tracking-panel" role="dialog">
+            <button class="close-tracking" id="closeTracking">✕</button>
+            <div id="trackingPhaseRoll" class="tracking-phase">
+                <h3 id="trackingTitle">🎲 Rolar para Rastrear</h3>
+                <div class="dice-area">
+                    <div class="dice" id="diceDisplay"><span class="dice-face">?</span></div>
+                </div>
+                <button class="btn btn-primary btn-large" id="rollDiceBtn">🎲 Rolar d20</button>
+            </div>
+            <div id="trackingPhaseResult" class="tracking-phase hidden">
+                <h3>Resultado: <span id="diceResult" class="result-number">0</span></h3>
+                <p class="result-hint">Escolha um deck:</p>
+                <div class="deck-selection" id="deckSelection"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast/Notificações -->
+    <div class="toast-container" id="toastContainer"></div>
+
+    <!-- Scripts do jogo -->
+    <script src="js/config.js" defer></script>
+    <script src="js/localization.js" defer></script>
+    <script src="js/mapData.js" defer></script>
+    <script src="js/characters.js" defer></script>
+    <script src="js/supabaseManager.js" defer></script>
+    <script src="js/roomManager.js" defer></script>
+    <script src="js/game.js" defer></script>
+    
+    <!-- Script de inicialização -->
+    <script>
+        window.addEventListener('load', () => {
+            // Aguardar um pouco para carregar estilos e scripts
+            setTimeout(() => {
+                const loader = document.getElementById('initialLoader');
+                if (loader) {
+                    loader.classList.add('fade-out');
+                    setTimeout(() => loader.remove(), 500);
+                }
+                
+                // Inicializar o sistema de salas quando tudo carregar
+                if (window.roomManager) {
+                    window.roomManager.updateConnectionStatus();
+                }
+            }, 800);
+        });
+    </script>
+</body>
+</html>

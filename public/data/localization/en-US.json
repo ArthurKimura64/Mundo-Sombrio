@@ -1,0 +1,352 @@
+{
+    "game": {
+        "title": "Dark World",
+        "subtitle": "Board Map"
+    },
+    "ui": {
+        "players": "Players",
+        "currentTurn": "Current Turn",
+        "selectCharacter": "Select Character",
+        "addPlayer": "+ Add Player",
+        "playerName": "Player name",
+        "resetGame": "↻ Reset Game",
+        "confirmReset": "Are you sure you want to reset the game?",
+        "movement": "Movement",
+        "movesAvailable": "You can move",
+        "clickToMove": "Click on a highlighted tile to move",
+        "cancelMove": "✕ Cancel",
+        "confirmMove": "✓ Confirm",
+        "endTurn": "End Turn",
+        "tile": "tiles",
+        "health": "Health",
+        "talents": "Talents",
+        "abilities": "Abilities",
+        "passive": "Passive",
+        "active": "Active",
+        "level": "Level",
+        "value": "Value",
+        "characterInfo": "Character Info",
+        "stats": "Stats",
+        "maxHealth": "Max Health",
+        "movementRange": "Movement Range"
+    },
+    "errors": {
+        "noPlayers": "Add at least one player!",
+        "maxPlayers": "Maximum of 6 players!",
+        "noName": "Enter a name for the player!",
+        "noCharacter": "Select a character!",
+        "characterInUse": "This character is already in use!",
+        "initError": "Error initializing the game. Please reload the page.",
+        "reload": "Reload"
+    },
+    "character": {
+        "hunter": {
+            "name": "Hunter",
+            "description": "Specialist in tracking and ranged attacks. Knows well the dark lands and their creatures."
+        },
+        "mystic": {
+            "name": "Mystic",
+            "description": "Master of arcane arts, capable of manipulating the energies of the dark world."
+        },
+        "guardian": {
+            "name": "Guardian",
+            "description": "Tireless protector, with great resistance and ability to defend allies."
+        },
+        "shadow": {
+            "name": "Shadow",
+            "description": "Master of stealth, moves quickly and attacks by surprise."
+        },
+        "healer": {
+            "name": "Healer",
+            "description": "Knowledgeable in healing arts, capable of restoring the life of companions."
+        },
+        "berserker": {
+            "name": "Berserker",
+            "description": "Fierce warrior who channels fury into devastating combat."
+        },
+        "arthur": {
+            "name": "Arthur",
+            "description": "Versatile and intelligent adventurer, with skills in technology and geography."
+        }
+    },
+    "talent": {
+        "max_health": {
+            "name": "Max Health",
+            "description": "Maximum amount of health points the character can have."
+        },
+        "movement": {
+            "name": "Movement",
+            "description": "Number of tiles the character can move per turn."
+        },
+        "tracking": {
+            "name": "Tracking",
+            "description": "Ability to identify trails and detect hidden enemies. Each level increases detection range."
+        },
+        "precision": {
+            "name": "Precision",
+            "description": "Improves hit chance on ranged attacks. Each level adds damage bonus."
+        },
+        "arcane_power": {
+            "name": "Arcane Power",
+            "description": "Intensity of offensive spells. Each level increases magic damage."
+        },
+        "mana_pool": {
+            "name": "Mana Pool",
+            "description": "Amount of magical energy available for casting spells."
+        },
+        "armor": {
+            "name": "Armor",
+            "description": "Physical damage reduction. Each level reduces more damage."
+        },
+        "shield_block": {
+            "name": "Shield Block",
+            "description": "Chance to completely block an attack. Each level increases the chance."
+        },
+        "stealth": {
+            "name": "Stealth",
+            "description": "Ability to move without being detected. Each level makes detection harder."
+        },
+        "critical_strike": {
+            "name": "Critical Strike",
+            "description": "Extra damage on surprise attacks. Each level increases the damage multiplier."
+        },
+        "healing_power": {
+            "name": "Healing Power",
+            "description": "Amount of health restored by healing abilities. Each level increases healing."
+        },
+        "purification": {
+            "name": "Purification",
+            "description": "Number of negative effects that can be removed per turn."
+        },        "tecnologia": {
+            "name": "Technology",
+            "description": "Knowledge of technological equipment. Reduces rounds to mount tech items."
+        },
+        "geografia": {
+            "name": "Geography",
+            "description": "Knowledge of terrain and navigation. Reduces rounds to mount navigation items."
+        },
+        "inteligencia": {
+            "name": "Intelligence",
+            "description": "Intellectual capacity and reasoning. Reduces rounds to mount complex items."
+        },
+        "percepcao": {
+            "name": "Perception",
+            "description": "Observation capacity and attention to details. Increases efficiency in observation tasks."
+        },        "rage": {
+            "name": "Rage",
+            "description": "Damage bonus when health is low. Each level increases the bonus."
+        },
+        "brutal_strength": {
+            "name": "Brutal Strength",
+            "description": "Base damage on melee attacks. Each level increases damage."
+        }
+    },
+    "ability": {
+        "hunter_mark": {
+            "name": "Hunter's Mark",
+            "description": "Marks an enemy. All attacks against it deal extra damage for 2 turns."
+        },
+        "eagle_eye": {
+            "name": "Eagle Eye",
+            "description": "Can see through obstacles and detect enemies in a larger radius."
+        },
+        "mystic_barrier": {
+            "name": "Mystic Barrier",
+            "description": "Creates a protective barrier that absorbs the next damage received."
+        },
+        "arcane_sight": {
+            "name": "Arcane Sight",
+            "description": "Can detect magic and magical items in adjacent tiles."
+        },
+        "protective_aura": {
+            "name": "Protective Aura",
+            "description": "Adjacent allies take half damage for 1 turn."
+        },
+        "iron_will": {
+            "name": "Iron Will",
+            "description": "Immune to fear and mind control effects."
+        },
+        "vanish": {
+            "name": "Vanish",
+            "description": "Becomes invisible until the next attack or end of turn."
+        },
+        "backstab": {
+            "name": "Backstab",
+            "description": "Attacks against enemies that haven't detected you deal double damage."
+        },
+        "divine_light": {
+            "name": "Divine Light",
+            "description": "Heals all allies in adjacent tiles for 3 health points."
+        },
+        "healing_touch": {
+            "name": "Healing Touch",
+            "description": "At the end of each turn, restores 1 health to an adjacent ally."
+        },
+        "bloodlust": {
+            "name": "Bloodlust",
+            "description": "For 2 turns, each attack that deals damage restores 1 health."
+        },
+        "berserker_rage": {
+            "name": "Berserker Rage",
+            "description": "When health drops below 50%, gains an extra attack per turn."        },
+        "quick_thinking": {
+            "name": "Quick Thinking",
+            "description": "Once per turn, can reroll an intelligence check."
+        },
+        "resourceful": {
+            "name": "Resourceful",
+            "description": "Mounted items last one extra round before breaking."        }
+    },
+    "tracking": {
+        "title": "Track",
+        "rollDice": "Roll Dice",
+        "result": "You rolled",
+        "selectDeck": "Choose a Deck",
+        "drawCard": "Draw Card",
+        "availableDecks": "Available Decks",
+        "cannotTrack": "You can only Track at a location (not on paths)",
+        "mustBeInLocation": "You need to be at a location to Track"
+    },
+    "deck": {
+        "verde": {
+            "name": "Green Deck"
+        },
+        "amarelo": {
+            "name": "Yellow Deck"
+        },
+        "laranja": {
+            "name": "Orange Deck"
+        },
+        "russo": {
+            "name": "Russian Item"
+        },
+        "personagens": {
+            "name": "Character Deck"
+        }
+    },
+    "card": {
+        "verde_1": {
+            "name": "Minor Healing Potion",
+            "description": "Restores 3 health points"
+        },
+        "verde_2": {
+            "name": "Medicinal Herbs",
+            "description": "Can be used to heal 2 health or remove poison"
+        },
+        "verde_3": {
+            "name": "Torn Map",
+            "description": "Reveals nearby secret paths"
+        },
+        "amarelo_1": {
+            "name": "Protection Amulet",
+            "description": "Reduces next damage taken by half"
+        },
+        "amarelo_2": {
+            "name": "Energy Crystal",
+            "description": "Restores one use of special ability"
+        },
+        "laranja_1": {
+            "name": "Legendary Weapon",
+            "description": "+2 permanent damage on attacks"
+        },
+        "laranja_2": {
+            "name": "Reinforced Armor",
+            "description": "+3 permanent maximum health"
+        },
+        "russo_1": {
+            "name": "Mystical Vodka",
+            "description": "Gain +3 to all attributes for 2 turns"
+        },
+        "russo_2": {
+            "name": "Cursed Matryoshka",
+            "description": "Temporarily clone yourself, gaining an extra action"
+        },
+        "personagem_1": {
+            "name": "Mysterious Ally",
+            "description": "A new character permanently joins the group"
+        },
+        "personagem_2": {
+            "name": "Guardian Spirit",
+            "description": "Summons a guardian that fights by your side for 3 turns"
+        }
+        ,
+        "verde_bicicleta": {
+            "name": "Bicycle",
+            "description": "Consumes on use. Requires Intelligence to mount. When used, player moves +12 meters."
+        },
+        "verde_taco_pregr": {
+            "name": "Spiked Baseball Bat",
+            "description": "Weapon (does not consume on use). Requires Intelligence to mount. Damage 8."
+        },
+        "verde_barco": {
+            "name": "Boat",
+            "description": "Does not consume. Requires Money/Intelligence to mount. Allows all players to go to the Lake."
+        },
+        "verde_computador": {
+            "name": "Computer",
+            "description": "Consumes on use. Requires Technology/Money to mount. Unlocks an already revealed location."
+        },
+        "verde_internet": {
+            "name": "Internet",
+            "description": "Consumes on use. Requires Technology. Reveals all hidden Russian and American soldiers in the real world (mechanic to be added later)."
+        },
+        "verde_walkie": {
+            "name": "Walkie Talkie",
+            "description": "Consumes on use. Requires Technology. Teleports you to a location that contains another player with a Walkie Talkie."
+        },
+        "verde_medkit": {
+            "name": "Med Kit",
+            "description": "Consumes on use. Requires Intelligence. Fully restores the character's health."
+        },
+        "verde_raspadinha": {
+            "name": "Cherry Scratchcard",
+            "description": "Consumes on use. Requires Money. Restores 3 health."
+        },
+        "verde_pilha": {
+            "name": "Battery",
+            "description": "Consumes on use. Requires Money. Used together with a flashlight to exit the inverted world."
+        },
+        "verde_lanca_fogo": {
+            "name": "Flame-tipped Spear",
+            "description": "Weapon. Requires Intelligence to mount. Damage 10."
+        },
+        "verde_pisca_pisca": {
+            "name": "String Lights",
+            "description": "Consumes on use. Requires Technology/Money. Forces enemies to reveal all hidden cards at your location (only hidden cards in the real world)."
+        },
+        "verde_walkman": {
+            "name": "Walkman",
+            "description": "Consumes on use. Requires Technology. Removes possession from a player."
+        },
+        "verde_mapa": {
+            "name": "Map",
+            "description": "Consumes on use. Requires Geography. Keeps a tunnel revealed to enemies until the map is destroyed or discarded."
+        },
+        "verde_fosforo": {
+            "name": "Match",
+            "description": "Consumes on use. Requires Money. Must be used with gasoline to burn tunnels or other targets."
+        }
+    },
+    "locations": {
+        "LauraHouse": "Laura's House",
+        "DanoneHouse": "Danone's House",
+        "LucasHouse": "Lucas's House",
+        "Lake": "Lake",
+        "PetShop": "Pet Shop",
+        "Shopping": "Shopping Mall",
+        "ArthurHouse": "Arthur's House",
+        "School": "School",
+        "Library": "Library",
+        "Establishment": "Establishment",
+        "CityHall": "City Hall",
+        "Hospital": "Hospital",
+        "PoliceStation": "Police Station",
+        "Station": "Station",
+        "ThriftStore": "Thrift Store",
+        "HauntedHouse": "Haunted House",
+        "JacksonHouse": "Jackson's House",
+        "Mountain": "Mountain",
+        "FatherHouse": "Father's House",
+        "Laboratory": "Laboratory"
+    }
+}
